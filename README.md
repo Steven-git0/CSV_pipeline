@@ -1,5 +1,6 @@
 # CSV_pipeline
 
+
 1.The schema and data source is from snowflake, from snowflake the data will be automatically uploaded to an aws s3 bucket a prespecified time
 
 2. Using Aws lambda, the files that are uploaded will be checked and verified. In the event the files are not present an email will be sent out notifying the engineer of the fault.
@@ -14,3 +15,4 @@ Afterwards it get sent back to the s3 bucket for further processing.
 6. Superset(or Power Bi) is used to connect with athena and run queries and make tables on the data.
 
 The pipeline is fully automated with all relavent code uploaded. Use for future reference. 
+Note: at time of writing files are not organized please refer to the WCD Guidance on correct order
